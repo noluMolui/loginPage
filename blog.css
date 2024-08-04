@@ -19,11 +19,20 @@ body {
     margin: 20px;
 }
 
+@media (max-width: 768px) {
+    .paragraphs {
+        grid-template-columns: 1fr;
+    }
+}
+
 .paragraph-pair {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
+
+
 
 h1, header {
     font-family: "Bebas Neue", sans-serif;
