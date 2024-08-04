@@ -1,0 +1,27 @@
+.icons{
+    display: flex !important;
+    justify-content: space-around !important;
+    margin-right: 60% !important;
+    padding: 10px !important;
+}
+
+.paragraph{
+ display: flex;
+flex-direction: column;
+gap: 20px;}
+
+ h1, header{font-family: "Bebas Neue", sans-serif;
+        font-weight: 100;
+        font-style: normal;}
+
+header{
+ font-size: larger;
+ margin: 10px;
+
+}
+img{
+    max-width: 20%;
+    height: auto;
+    display: block;
+            
+}

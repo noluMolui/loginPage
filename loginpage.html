@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/74596132a7.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
-    
- <div class="logindetails">
-    <h2>
-        login
- </h2>
-<span>
- <input type="text" placeholder="username" required>
- <i class="fa-solid fa-user"></i>
- <div class="password">
-<input type="password" placeholder="password" required>
-<i class="fa-solid fa-lock"></i>
- </div>
-</span>
- <label>
-    <input type="checkbox"> keep me logged in
- </label>
- <a href="#">forgot password</a>
-<div> 
-    <button>login</button>
-</div>
-<p>Dont have an account? 
-    <a href="#">Register</a> 
-  </p>
- </div>
+    <div class="logindetails">
+        <h2>Login</h2>
+        <form id="loginForm" action="./codingblog.html">
+            <span>
+                <input type="text" name="username" placeholder="username" required>
+                <i class="fa-solid fa-user"></i>
+            </span>
+            <div class="password">
+                <input type="password" name="password" placeholder="password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <label>
+                <input type="checkbox"> Keep me logged in
+            </label>
+            <a href="#">Forgot password</a>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <p>Don't have an account? 
+            <a href="#">Register</a>
+        </p>
+    </div>
 
- 
-    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            var username = event.target.username.value;
+            var password = event.target.password.value;
+
+            
+            if(username && password) {
+                window.location.href = event.target.action;
+            } else {
+                alert('Please enter both username and password.');
+            }
+        });
+    </script>
 </body>
 </html>
