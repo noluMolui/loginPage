@@ -1,8 +1,8 @@
-body{
+section{
     background-color: rgb(230, 191, 218);
     display: flex;
-    justify-content: center;
-    align-items: center;
+justify-content: center;
+ align-items: center;
     min-height: 100vh;
 }
     .logindetails{ 
@@ -25,4 +25,3 @@ body{
     display: block;
     margin-top: 5px;}
     
-   

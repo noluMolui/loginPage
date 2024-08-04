@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Password Reset</h1>
+    <section>
+    <form id="loginForm" action="#">
+        <span>
+            <input type="text" name="username" placeholder="Username" required>
+            <i class="fa-solid fa-user"></i>
+        </span>
+        <input type="email" name="email" placeholder="Enter Your Email Address" required>
+        
+        <div>
+            <button type="submit">Enter</button>
+        </div>
+    </form>
+</section>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();  
+
+           
+            alert("An email with steps to reset your password has been sent!");
+        });
+    </script>
+</body>
+</html>
+
+    
