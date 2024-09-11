@@ -9,27 +9,25 @@
 <body>
     <h1>Password Reset</h1>
     <section>
-    <form id="loginForm" action="#">
-        <span>
-            <input type="text" name="username" placeholder="Username" required>
-            <i class="fa-solid fa-user"></i>
-        </span>
-        <input type="email" name="email" placeholder="Enter Your Email Address" required>
-        
-        <div>
-            <button type="submit">Enter</button>
-        </div>
-    </form>
-</section>
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();  
+        <form id="loginForm" action="#">
+            <span>
+                <input type="text" name="username" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+            </span>
+            <input type="email" name="email" placeholder="Enter Your Email Address" required>
+            <div>
+                <button type="submit">Enter</button>
+            </div>
+        </form>
+    </section>
 
-           
-            alert("An email with steps to reset your password has been sent!");
-        });
-    </script>
+    
+    <script src="./index.js"></script>
+
+    
+
 </body>
 </html>
+
 
     

@@ -3,45 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login Page - Your Website Name</title>
+    <meta name="description" content="Login to your account on Your Website Name to access exclusive content and features.">
+    <meta name="keywords" content="login, account access, Your Website Name">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/74596132a7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <section>
-    <div class="logindetails">
-        <h2>Login</h2>
-        <form id="loginForm" action="./codingblog.html">
-            <span>
-                <input type="text" name="username" placeholder="username" required>
-                <i class="fa-solid fa-user"></i>
-            </span>
-            <div class="password">
-                <input type="password" name="password" placeholder="password" required>
-                <i class="fa-solid fa-lock"></i>
-            </div>
-            <label>
-                <input type="checkbox"> Keep me logged in
-            </label>
-            <a href="forgot.html">Forgot password</a>
-            
-            <div>
-                <button type="submit">Login</button>
-            </div>
-        </form>
-        <p>Don't have an account? 
-            <a href="#">Register</a>
-        </p>
-    </div>
-</section>
+        <div class="logindetails">
+            <h1>Login to Your Account</h1>
+            <form id="loginForm" action="./codingblog.html">
+                <div class="input-group">
+                    <span>
+                        <input type="text" name="username" placeholder="Username" required>
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                </div>
+                <div class="input-group password">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <label>
+                    <input type="checkbox"> Keep me logged in
+                </label>
+                <a href="forgot.html">Forgot password?</a>
+                
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <p>Don't have an account? 
+                <a href="register.html">Register here</a>
+            </p>
+        </div>
+    </section>
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault(); 
             var username = event.target.username.value;
             var password = event.target.password.value;
 
-            
             if(username && password) {
                 window.location.href = event.target.action;
             } else {
@@ -49,6 +52,6 @@
             }
         });
     </script>
-   
 </body>
 </html>
+S
